@@ -5,6 +5,7 @@
 ################################################################################
 
 # This is a very important comment
+# bump
 
 COMPFLAGS    += -nostdlib
 COMPFLAGS    += -U __linux__ -U __FreeBSD__ -U __sun__
