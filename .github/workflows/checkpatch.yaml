@@ -19,7 +19,7 @@ jobs:
           GOVERN_VERSION: 0.1.9
 
       - name: Run checkpatch through governctl
-        run: governctl pr check patch --ignore "${GOVERN_IGNORES}" "unikraft/unikraft/${PR_NUMBER}"
+        run: governctl pr check patch --ignore "${GOVERN_IGNORES}" "unikraft-bananatree/unikraft/${PR_NUMBER}"
         env:
           PR_NUMBER: ${{ github.event.number }}
           GOVERN_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

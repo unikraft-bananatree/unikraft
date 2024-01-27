@@ -30,7 +30,7 @@ jobs:
         run: |
           set -xe
           unset GITHUB_TOKEN
-          governctl pr merge --approve-states "${GOVERN_APPROVE_STATES}" --review-states "${GOVERN_REVIEW_STATES}" --base "staging" --push "unikraft/unikraft/${PR_NUMBER}"
+          governctl pr merge --approve-states "${GOVERN_APPROVE_STATES}" --review-states "${GOVERN_REVIEW_STATES}" --base "staging" --push "unikraft-bananatree/unikraft/${PR_NUMBER}"
         env:
           GOVERN_GITHUB_TOKEN: ${{ secrets.GH_MERGE_PAT }}
           GOVERN_GITHUB_USER: ${{ secrets.GH_MERGE_ACTOR }}

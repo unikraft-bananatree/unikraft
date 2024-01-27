@@ -26,7 +26,7 @@ jobs:
           GOVERN_VERSION: 0.1.9
 
       - name: Label PR
-        run: governctl pr sync labels "unikraft/unikraft/${PR_NUMBER}" --labels-dir .github/labels
+        run: governctl pr sync labels "unikraft-bananatree/unikraft/${PR_NUMBER}" --labels-dir .github/labels
         env:
           GOVERN_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GOVERN_GITHUB_USER: ${{ secrets.GH_CHECKPATCH_ACTOR }}
